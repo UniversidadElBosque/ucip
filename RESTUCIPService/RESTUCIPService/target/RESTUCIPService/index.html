@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Consulta Dinámica UCIP</title>
+
+        <!-- Bootstrap -->
+        <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <!-- iCheck -->
+        <link href="iCheck/skins/flat/green.css" rel="stylesheet">
+
+        <!-- bootstrap-daterangepicker -->
+        <link href="bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+        <!-- bootstrap-datetimepicker -->
+        <link href="bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+
+        <link href="normalize-css/normalize.css" rel="stylesheet">
+
+        <!-- Custom Theme Style -->
+        <link href="css/custom.css" rel="stylesheet">
+
+        <!-- Estilos proyecto UCIP -->
+        <link href="css/style.css" rel="stylesheet">
+
+    </head>
+
+    <body class="nav-md">
+        <div class="container body">
+            <span class="ir-arriba fa fa-chevron-up"></span>
+            <div class="main_container">
+                <div class="col-md-3 left_col">
+                    <div class="left_col scroll-view">
+                        <div class="navbar nav_title" style="border: 0;">
+                            <a href="index.html" class="site_title"><i class="fa fa-refresh"></i> <span>Consulta UCIP</span></a>
+
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <!-- menu profile quick info -->
+                        <div class="profile clearfix">
+                            <div class="profile_pic">
+                                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                            </div>
+                            <div class="profile_info">
+                                <span>Welcome,</span>
+                            </div>
+                        </div>
+                        <!-- /menu profile quick info -->
+
+                        <br />
+
+                        <!-- sidebar menu -->
+                        <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                            <div class="menu_section">
+                                <h3>General</h3>
+                                <ul class="nav side-menu">
+                                    <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="echarts.html">Pediatrics Dashboard</a></li>
+                                            <li><a href="index.html">Consulta Dinámica</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!-- /sidebar menu -->
+
+                        <!-- /menu footer buttons -->
+                        <div class="sidebar-footer hidden-small">
+                            <a data-toggle="tooltip" data-placement="top" title="Settings">
+                                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                            </a>
+                            <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                            </a>
+                            <a data-toggle="tooltip" data-placement="top" title="Lock">
+                                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                            </a>
+                            <a data-toggle="tooltip" data-placement="top" title="Cerrar sesión" href="#" onclick="logout();">
+                                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <!-- /menu footer buttons -->
+                    </div>
+                </div>
+
+                <!-- top navigation -->
+                <div class="top_nav">
+                    <div class="nav_menu">
+                        <nav>
+                            <div class="nav toggle">
+                                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                            </div>
+
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="">
+                                    <a href="#" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <img src="images/img.jpg" alt="">Sesión ucip
+                                        <span class=" fa fa-angle-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                        <li><a> Profile</a></li>
+                                        <li>
+                                            <a>
+                                                <span>Settings</span>
+                                            </a>
+                                        </li>
+                                        <li><a>Help</a></li>
+                                        <li><a href="#" onclick="logout();" ><i class="fa fa-sign-out pull-right"></i>Cerrar sesión</a></li>
+                                    </ul>
+                                </li>
+
+                                <li role="presentation" class="dropdown">
+
+                                    <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                                        <li>
+                                            <a>
+                                                <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                                <span>
+                                                    <span>John Smith</span>
+                                                    <span class="time">3 mins ago</span>
+                                                </span>
+                                                <span class="message">
+                                                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                                <span>
+                                                    <span>John Smith</span>
+                                                    <span class="time">3 mins ago</span>
+                                                </span>
+                                                <span class="message">
+                                                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                                <span>
+                                                    <span>John Smith</span>
+                                                    <span class="time">3 mins ago</span>
+                                                </span>
+                                                <span class="message">
+                                                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                                <span>
+                                                    <span>John Smith</span>
+                                                    <span class="time">3 mins ago</span>
+                                                </span>
+                                                <span class="message">
+                                                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="text-center">
+                                                <a>
+                                                    <strong>See All Alerts</strong>
+                                                    <i class="fa fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- /top navigation -->
+
+                <!-- page content -->
+                <div class="right_col" role="main">
+
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="x_panel tile">
+                                <div class="x_title">
+                                    <h2>Rango de fecha</h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li><a>&nbsp;&nbsp;&nbsp;</a></li>
+                                        <li><a>&nbsp;&nbsp;&nbsp;</a></li>
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                    <h4>Seleccione un rango de fechas:</h4>
+
+                                    <div class="row calendar-exibit">
+                                        <div class="col-md-12">
+
+                                            <fieldset>
+                                                Desde:
+                                                <div class="control-group">
+                                                    <div class="controls">
+                                                        <div class="col-xs-12" >
+                                                            <input type="text" class="form-control has-feedback-left" id="single_cal1" placeholder="Desde" aria-describedby="inputSuccess1Status">
+                                                            <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
+                                                            <span id="inputSuccess1Status" class="sr-only">(success)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+
+                                        </div>
+
+                                        <div class="col-md-12">
+
+                                            <fieldset>
+                                                Hasta:
+                                                <div class="control-group">
+                                                    <div class="controls">
+                                                        <div class="col-xs-12">
+                                                            <input type="text" class="form-control has-feedback-left" id="single_cal2" placeholder="Hasta" aria-describedby="inputSuccess2Status">
+                                                            <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
+                                                            <span id="inputSuccess2Status" class="sr-only">(success)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="widget_summary">
+
+                                        <div class="clearfix"></div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="x_panel tile overflow_hidden">
+                                <div class="x_title">
+                                    <h2>Clasificaciones</h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li><a>&nbsp;&nbsp;&nbsp;</a></li>
+                                        <li><a>&nbsp;&nbsp;&nbsp;</a></li>
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                    <h4>Seleccione una clasificación de ingreso del paciente:</h4>
+                                    <div id="clasificaciones" class="">
+
+                                        <ul id="listaClasificacion" class="to_do"></ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="x_panel tile overflow_hidden">
+                                <div class="x_title">
+                                    <h2>Variables ucip</h2>
+
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li><a>&nbsp;&nbsp;&nbsp;</a></li>
+                                        <li><a>&nbsp;&nbsp;&nbsp;</a></li>
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                    <h4>Seleccione las variables que necesita:</h4>
+                                    <div id="variables" class="">
+
+                                        <ul id="tablas" class="to_do"></ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button type="submit" class="btn btn-success" onclick="consultar();">Consultar</button>
+
+                    <!-- top tiles -->
+                    <div class="row tile_count">
+
+                        <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                            <span class="count_top"><i class="fa fa-user"></i> Resultados encontrados</span>
+                            <div id="cuenta-json" class="count green">0</div>
+                        </div>
+
+                    </div>
+                    <!-- /top tiles -->
+
+                    <div class="row">
+
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+
+                            <div class="row">
+
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="x_panel">
+                                        <div class="x_title">
+                                            <h2>Resultados<small>UCIP</small></h2>
+                                            <ul class="nav navbar-right panel_toolbox">
+                                                <li><a>&nbsp;&nbsp;&nbsp;</a></li>
+                                                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-download"></i></a>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a href="#" onclick="exportar();">Exportar</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="x_content">
+                                            <div id="jsontotable" class="jsontotable"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /page content -->
+
+                <!-- footer content -->
+                <footer>
+                    <div class="pull-right">
+                        <a>&nbsp;</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </footer>
+                <!-- /footer content -->
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="jquery/dist/jquery.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- FastClick -->
+        <script src="fastclick/lib/fastclick.js"></script>
+        <!-- Chart.js -->
+        <script src="Chart.js/dist/Chart.min.js"></script>
+        <!-- iCheck -->
+        <script src="iCheck/icheck.min.js"></script>
+
+        <!-- bootstrap-daterangepicker -->
+        <script src="moment/min/moment.min.js"></script>
+        <script src="bootstrap-daterangepicker/daterangepicker.js"></script>
+
+        <!-- bootstrap-datetimepicker -->    
+        <script src="bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+        <!-- Funciones propias Proyecto UCIP -->
+        <script src="js/jquery.jsontotable.js"></script>
+        <script src="js/jquery.tabletoCSV.js"></script>
+        <script src="js/ucip-login.js"></script>
+        <script src="js/ucip-functions.js"></script>
+        <script src="js/ucip-consulta.js"></script>
+
+        <!-- Custom Theme Scripts -->
+        <script src="js/custom.js"></script>
+    </body>
+
+</html>

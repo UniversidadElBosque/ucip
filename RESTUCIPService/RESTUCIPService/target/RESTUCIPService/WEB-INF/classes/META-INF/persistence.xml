@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="co.edu.unbosque.common_RESTUCIPService_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>entidad.Aseguradora</class>
+    <class>co.edu.unbosque.entity.Usuario</class>
+    <class>co.edu.unbosque.entity.VariablesNeurologicas</class>
+    <class>co.edu.unbosque.entity.VariablesPatBase</class>
+    <class>co.edu.unbosque.entity.OrganosDisfuncionales</class>
+    <class>co.edu.unbosque.entity.NombreEvidenciaModulo</class>
+    <class>co.edu.unbosque.entity.InjuriaRenal</class>
+    <class>co.edu.unbosque.entity.DisfuncionRespiratoria</class>
+    <class>co.edu.unbosque.entity.VariablesDesenlaces</class>
+    <class>co.edu.unbosque.entity.DisfuncionCardiovascular</class>
+    <class>co.edu.unbosque.entity.HipertensionPulmonar</class>
+    <class>co.edu.unbosque.entity.DisfuncionHematologica</class>
+    <class>co.edu.unbosque.entity.VariablesCardiovasculares</class>
+    <class>co.edu.unbosque.entity.Prehospitalario</class>
+    <class>co.edu.unbosque.entity.VariablesSoporteRenal</class>
+    <class>co.edu.unbosque.entity.VariablesQuirurgicas</class>
+    <class>co.edu.unbosque.entity.Evidencia</class>
+    <class>co.edu.unbosque.entity.PacienteAcudiente</class>
+    <class>co.edu.unbosque.entity.DisfuncionRenal</class>
+    <class>co.edu.unbosque.entity.OtrosProcedimientosucip</class>
+    <class>co.edu.unbosque.entity.Sepsis</class>
+    <class>co.edu.unbosque.entity.DisfuncionHepatica</class>
+    <class>co.edu.unbosque.entity.RespuestaInflamatoria</class>
+    <class>co.edu.unbosque.entity.VariablesSoporteInfeccioso</class>
+    <class>co.edu.unbosque.entity.SoporteVentilatorio</class>
+    <class>co.edu.unbosque.entity.Auditoria</class>
+    <class>co.edu.unbosque.entity.VariablesSoporteHematologico</class>
+    <class>co.edu.unbosque.entity.Diagnostico</class>
+    <class>co.edu.unbosque.entity.VariablesSoporteNutricional</class>
+    <class>co.edu.unbosque.entity.EstanciaUcip</class>
+    <class>co.edu.unbosque.entity.CieDiez</class>
+    <class>co.edu.unbosque.entity.HipertensionAbdominal</class>
+    <class>co.edu.unbosque.entity.Acudiente</class>
+    <class>co.edu.unbosque.entity.NomProcedqxcardiovascular</class>
+    <class>co.edu.unbosque.entity.VariablesMicrobiologicas</class>
+    <class>co.edu.unbosque.entity.SoporteCardiovascular</class>
+    <class>co.edu.unbosque.entity.DisfuncionNeurologica</class>
+    <class>co.edu.unbosque.entity.DisfuncionIntestinal</class>
+    <class>co.edu.unbosque.entity.DashItem</class>
+    <class>co.edu.unbosque.entity.ClasificacionPaciente</class>
+    <class>co.edu.unbosque.entity.borrarCalidadEnucip</class>
+    <class>co.edu.unbosque.entity.CalidadEnucip</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://aretico.com:5555/ucip"/>
+      <property name="javax.persistence.jdbc.user" value="ucip"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="Bosque2013"/>
+    </properties>
+  </persistence-unit>
+</persistence>

@@ -1,0 +1,95 @@
+package co.edu.unbosque.entity;
+
+import co.edu.unbosque.entity.Acudiente;
+import co.edu.unbosque.entity.CalidadEnucip;
+import co.edu.unbosque.entity.Diagnostico;
+import co.edu.unbosque.entity.DisfuncionCardiovascular;
+import co.edu.unbosque.entity.DisfuncionHematologica;
+import co.edu.unbosque.entity.DisfuncionHepatica;
+import co.edu.unbosque.entity.DisfuncionIntestinal;
+import co.edu.unbosque.entity.DisfuncionNeurologica;
+import co.edu.unbosque.entity.DisfuncionRenal;
+import co.edu.unbosque.entity.DisfuncionRespiratoria;
+import co.edu.unbosque.entity.Evidencia;
+import co.edu.unbosque.entity.HipertensionAbdominal;
+import co.edu.unbosque.entity.HipertensionPulmonar;
+import co.edu.unbosque.entity.InjuriaRenal;
+import co.edu.unbosque.entity.OrganosDisfuncionales;
+import co.edu.unbosque.entity.OtrosProcedimientosucip;
+import co.edu.unbosque.entity.Paciente;
+import co.edu.unbosque.entity.Prehospitalario;
+import co.edu.unbosque.entity.RespuestaInflamatoria;
+import co.edu.unbosque.entity.Sepsis;
+import co.edu.unbosque.entity.SoporteCardiovascular;
+import co.edu.unbosque.entity.SoporteVentilatorio;
+import co.edu.unbosque.entity.VariablesCardiovasculares;
+import co.edu.unbosque.entity.VariablesDesenlaces;
+import co.edu.unbosque.entity.VariablesMicrobiologicas;
+import co.edu.unbosque.entity.VariablesNeurologicas;
+import co.edu.unbosque.entity.VariablesPatBase;
+import co.edu.unbosque.entity.VariablesQuirurgicas;
+import co.edu.unbosque.entity.VariablesSoporteHematologico;
+import co.edu.unbosque.entity.VariablesSoporteInfeccioso;
+import co.edu.unbosque.entity.VariablesSoporteNutricional;
+import co.edu.unbosque.entity.VariablesSoporteRenal;
+import java.util.Date;
+import javax.annotation.Generated;
+import javax.persistence.metamodel.CollectionAttribute;
+import javax.persistence.metamodel.SingularAttribute;
+import javax.persistence.metamodel.StaticMetamodel;
+
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2017-12-13T22:54:02")
+@StaticMetamodel(EstanciaUcip.class)
+public class EstanciaUcip_ { 
+
+    public static volatile CollectionAttribute<EstanciaUcip, VariablesSoporteNutricional> variablesSoporteNutricionalCollection;
+    public static volatile CollectionAttribute<EstanciaUcip, SoporteCardiovascular> soporteCardiovascularCollection;
+    public static volatile SingularAttribute<EstanciaUcip, String> diagnosticoIngresoUcip;
+    public static volatile CollectionAttribute<EstanciaUcip, HipertensionAbdominal> hipertensionAbdominalCollection;
+    public static volatile CollectionAttribute<EstanciaUcip, RespuestaInflamatoria> respuestaInflamatoriaCollection;
+    public static volatile CollectionAttribute<EstanciaUcip, CalidadEnucip> calidadEnucipCollection;
+    public static volatile CollectionAttribute<EstanciaUcip, VariablesMicrobiologicas> variablesMicrobiologicasCollection;
+    public static volatile CollectionAttribute<EstanciaUcip, VariablesQuirurgicas> variablesQuirurgicasCollection;
+    public static volatile CollectionAttribute<EstanciaUcip, DisfuncionRenal> disfuncionRenalCollection;
+    public static volatile CollectionAttribute<EstanciaUcip, DisfuncionHepatica> disfuncionHepaticaCollection;
+    public static volatile CollectionAttribute<EstanciaUcip, Evidencia> evidenciaCollection;
+    public static volatile SingularAttribute<EstanciaUcip, Long> id;
+    public static volatile SingularAttribute<EstanciaUcip, String> telefono;
+    public static volatile CollectionAttribute<EstanciaUcip, Sepsis> sepsisCollection;
+    public static volatile SingularAttribute<EstanciaUcip, String> procedencia;
+    public static volatile CollectionAttribute<EstanciaUcip, VariablesSoporteRenal> variablesSoporteRenalCollection;
+    public static volatile SingularAttribute<EstanciaUcip, Float> peso;
+    public static volatile SingularAttribute<EstanciaUcip, String> direccion;
+    public static volatile SingularAttribute<EstanciaUcip, Date> fechaEgreso;
+    public static volatile CollectionAttribute<EstanciaUcip, DisfuncionRespiratoria> disfuncionRespiratoriaCollection;
+    public static volatile SingularAttribute<EstanciaUcip, Date> fechaIngreso;
+    public static volatile CollectionAttribute<EstanciaUcip, VariablesSoporteHematologico> variablesSoporteHematologicoCollection;
+    public static volatile CollectionAttribute<EstanciaUcip, Diagnostico> diagnosticoCollection;
+    public static volatile CollectionAttribute<EstanciaUcip, HipertensionPulmonar> hipertensionPulmonarCollection;
+    public static volatile SingularAttribute<EstanciaUcip, String> nivelEducaPadre;
+    public static volatile CollectionAttribute<EstanciaUcip, DisfuncionCardiovascular> disfuncionCardiovascularCollection;
+    public static volatile SingularAttribute<EstanciaUcip, Float> talla;
+    public static volatile CollectionAttribute<EstanciaUcip, DisfuncionHematologica> disfuncionHematologicaCollection;
+    public static volatile CollectionAttribute<EstanciaUcip, VariablesCardiovasculares> variablesCardiovascularesCollection;
+    public static volatile CollectionAttribute<EstanciaUcip, OrganosDisfuncionales> organosDisfuncionalesCollection;
+    public static volatile CollectionAttribute<EstanciaUcip, InjuriaRenal> injuriaRenalCollection;
+    public static volatile SingularAttribute<EstanciaUcip, String> nivelEducaMadre;
+    public static volatile SingularAttribute<EstanciaUcip, String> nombreSeguridadSocial;
+    public static volatile SingularAttribute<EstanciaUcip, String> institucionalizado;
+    public static volatile SingularAttribute<EstanciaUcip, Paciente> paciente;
+    public static volatile CollectionAttribute<EstanciaUcip, DisfuncionNeurologica> disfuncionNeurologicaCollection;
+    public static volatile SingularAttribute<EstanciaUcip, String> clasificacionPaciente;
+    public static volatile CollectionAttribute<EstanciaUcip, SoporteVentilatorio> soporteVentilatorioCollection;
+    public static volatile SingularAttribute<EstanciaUcip, Long> diasEstancia;
+    public static volatile SingularAttribute<EstanciaUcip, String> seguridadSocial;
+    public static volatile CollectionAttribute<EstanciaUcip, VariablesNeurologicas> variablesNeurologicasCollection;
+    public static volatile SingularAttribute<EstanciaUcip, Acudiente> acudiente;
+    public static volatile CollectionAttribute<EstanciaUcip, VariablesSoporteInfeccioso> variablesSoporteInfecciosoCollection;
+    public static volatile CollectionAttribute<EstanciaUcip, VariablesDesenlaces> variablesDesenlacesCollection;
+    public static volatile CollectionAttribute<EstanciaUcip, OtrosProcedimientosucip> otrosProcedimientosucipCollection;
+    public static volatile CollectionAttribute<EstanciaUcip, Prehospitalario> prehospitalarioCollection;
+    public static volatile CollectionAttribute<EstanciaUcip, DisfuncionIntestinal> disfuncionIntestinalCollection;
+    public static volatile CollectionAttribute<EstanciaUcip, VariablesPatBase> variablesPatBaseCollection;
+    public static volatile SingularAttribute<EstanciaUcip, String> departamento;
+
+}

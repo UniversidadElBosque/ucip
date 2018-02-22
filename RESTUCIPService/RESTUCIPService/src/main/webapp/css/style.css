@@ -1,0 +1,41 @@
+.liTabla{
+    background: blue;
+}
+
+.ir-arriba{
+    display:none;
+    padding: 20px;
+
+    background-color: #2A3F54;
+    opacity: 0.3;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;   
+    z-index: 5;
+}
+.ir-arriba:hover{
+    opacity: 1;
+    background: #2A3F54;  
+
+}
+
+/*
+.ir-arriba{
+    width:40px;
+    height:40px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    right:100px;
+    display:none;text-indent:-9999px;   
+}*/
+
+.link-todos{
+    padding-left: 20px;
+    color: #996600;
+    font-weight: bold;
+    background-color: #00caff; 
+}

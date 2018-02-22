@@ -1,0 +1,1 @@
+copy dash_item from 'C:\Users\eduardob\Documents\NetBeansProjects\RESTUCIPService\docs\dash_item.csv' using delimiters ';';
